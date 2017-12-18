@@ -1,0 +1,32 @@
+<div class="auth-page">
+  <div class="auth-block">
+    <form class="auth-form" (ngSubmit)="submitForm(form)" #form="ngForm">
+      <div class="auth-logo">
+        <img class="logo" src="../../assets/images/logo.png">
+      </div>
+
+      <label class="auth-label">
+        <input
+          type="text"
+          class="auth-input"
+          name="username"
+          placeholder="Username"
+          ngModel
+          required>
+      </label>
+
+      <label class="auth-label">
+        <input
+          type="password"
+          class="auth-input"
+          name="password"
+          placeholder="Password"
+          ngModel
+          required>
+      </label>
+
+      <button type="submit" class="auth-btn" [disabled]="!form.valid">Enter</button>
+      <!-- <a routerLink="/workflow" class="auth-btn" [disabled]="!form.valid">Enter</a> -->
+    </form>
+  </div>
+</div>

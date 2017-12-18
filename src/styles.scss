@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'Verdana';
+  src: url('./assets/fonts/verdana-regular.ttf') format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url('./assets/fonts/verdana-bold.ttf') format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src: url('./assets/fonts/verdana-italic.ttf') format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  outline: 0;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Verdana";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: normal;
+  overflow-x: hidden;
+
+  min-width: 1024px;
+}
+
+.container {
+  // width: 1280px;
+  // margin: 0 auto;
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

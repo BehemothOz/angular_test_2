@@ -1,0 +1,27 @@
+<div class="clients-panel">
+  <div class="cl-panel-item item-alerts">
+    <div class="title">Alerts</div>
+    <div class="cl-element">
+      <span class="top-info">Announcement</span>
+      <span class="bottom-info string">20 min ago</span>
+    </div>
+  </div>
+
+  <div class="cl-panel-item item-clients">
+    <div class="title">Clients</div>
+    <ul class="cl-list">
+      <app-client
+        *ngFor="let client of incomingClient"
+        [client]="client"
+        (qwerty)="qwerty($event)">
+      </app-client>
+    </ul>
+  </div>
+
+  <div class="cl-panel-item item-supervisors">
+    <div class="title">Supervisors</div>
+    <div class="cl-element-oneline">
+      New chat
+    </div>
+  </div>
+</div>
